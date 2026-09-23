@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Roteiro · Quem Fez o Seu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Oswald:wght@300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400&display=swap">
+<style>
+:root{
+  --ground:#B9B9B6;
+  --paper:#CBCBC8;
+  --paper-2:#D6D6D3;
+  --white:#E9E9E6;
+  --ink:#121211;
+  --ink-2:#3D3D3A;
+  --ink-3:#6E6E68;
+  --line:#9C9C97;
+  --line-soft:#AFAFA9;
+  --pink:#D80A5F;
+  --ember:#B5350F;
+  --gold:#8A6A1E;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--ground);color:var(--ink);
+  font-family:"Poppins",system-ui,sans-serif;
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+.osw{font-family:"Oswald",Impact,sans-serif}
+.hand{font-family:"Caveat",cursive;color:var(--pink);font-weight:600}
+.wrap{max-width:900px;margin:0 auto;padding:0 24px}
+
+.cover{
+  min-height:min(58vh,480px);display:flex;flex-direction:column;justify-content:center;
+  background:var(--paper-2);border-bottom:1px solid var(--line);
+  padding:64px 0 48px;
+}
+.eyebrow{font-family:"Oswald",sans-serif;font-size:11.5px;font-weight:500;letter-spacing:.38em;text-transform:uppercase;color:var(--ember);margin-bottom:18px}
+.cover h1{font-family:"Oswald",sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(32px,6vw,58px);line-height:1.03;letter-spacing:.01em;margin:0 0 20px}
+.cover .lead{font-size:clamp(15px,2vw,18px);line-height:1.6;font-weight:200;max-width:58ch;color:var(--ink-2);margin:0}
+
+section{padding:44px 0;border-bottom:1px solid var(--line-soft)}
+section:last-of-type{border-bottom:none}
+.kicker{font-family:"Oswald",sans-serif;font-size:12px;font-weight:500;letter-spacing:.32em;text-transform:uppercase;color:var(--ink-3);margin-bottom:10px}
+h2{font-family:"Oswald",sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(24px,3.4vw,36px);letter-spacing:.03em;margin:0 0 22px;line-height:1.1}
+h2 .n{color:var(--ember)}
+p{line-height:1.68;color:var(--ink-2);font-weight:300}
+.lead{font-size:clamp(16px,2vw,19px);max-width:64ch}
+
+.infogrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin:22px 0}
+.infocard{background:var(--white);border-radius:3px;padding:16px 20px;border-left:3px solid var(--ember)}
+.infocard .k{font-family:"Oswald",sans-serif;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
+.infocard .v{font-size:14.5px;color:var(--ink)}
+
+.ep{background:var(--white);border-radius:3px;padding:26px 28px;border-top:2px solid var(--ember);margin-bottom:20px}
+.ep.pink{border-top-color:var(--pink)}
+.ep.gold{border-top-color:var(--gold)}
+.ep-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:10px 20px;margin-bottom:14px}
+.ep-head .epn{font-family:"Oswald",sans-serif;font-weight:600;text-transform:uppercase;font-size:16.5px;letter-spacing:.04em;color:var(--ink)}
+.ep-head .idx{font-family:"Oswald",sans-serif;font-size:12px;letter-spacing:.1em;color:var(--ember)}
+.principal{font-size:15.5px;color:var(--ink-2);margin:0 0 8px;line-height:1.6}
+.label{font-family:"Oswald",sans-serif;font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);margin:16px 0 8px}
+.label:first-of-type{margin-top:0}
+ul.q{margin:0;padding-left:20px}
+ul.q li{margin-bottom:6px;color:var(--ink-2);line-height:1.55;font-size:15px}
+ul.q li::marker{color:var(--ember)}
+.note{font-size:14px;color:var(--ink-3)}
+
+.refs{margin-top:14px;padding-top:14px;border-top:1px solid var(--line-soft);display:flex;flex-wrap:wrap;gap:6px 4px}
+.refs a{color:var(--ember);font-size:13px}
+.refs a:not(:last-child)::after{content:" · ";color:var(--ink-3)}
+
+.quote-box{background:var(--paper-2);border-radius:3px;padding:14px 18px;margin:12px 0;font-family:"Oswald",sans-serif;font-weight:400;font-size:15px;line-height:1.5;color:var(--ink)}
+
+footer{padding:36px 0 64px;text-align:center}
+footer p{font-family:"Oswald",sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3)}
+
+@media (max-width:520px){.wrap{padding:0 18px}}
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="wrap">
+    <div class="eyebrow">Ogro Steaks × Seven7</div>
+    <h1 class="osw">Quem Fez o Seu</h1>
+    <p class="lead">Roteiro de gravação na <span class="hand">operação</span>: loja, cozinha, chapa e takes dos burgers.</p>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <section>
+    <div class="kicker">Sobre o quadro</div>
+    <h2>Quem Fez <span class="n">o</span> Seu</h2>
+    <div class="infogrid">
+      <div class="infocard"><div class="k">Objetivo</div><div class="v">Mostrar produto e curiosidades da operação: desejo, produto, experiência</div></div>
+      <div class="infocard"><div class="k">Linha editorial</div><div class="v">Desejo + Bastidores</div></div>
+      <div class="infocard"><div class="k">Frequência</div><div class="v">Semanal</div></div>
+    </div>
+    <p class="lead">Do que se trata: cozinha, montagem, mãos, chapa, macros, ASMR, POV e processo real. Gravação prioritariamente em 60fps, misturando macro, close, câmera próxima, POV, som real da cozinha e trends que façam sentido naquela semana.</p>
+  </section>
+
+  <section>
+    <div class="kicker">Conteúdos pra gravar</div>
+    <h2>10 takes <span class="n">do</span> quadro</h2>
+
+    <div class="ep">
+      <div class="ep-head"><span class="idx">01</span><span class="epn">POV: seu pedido acabou de entrar</span></div>
+      <p class="principal">Acompanhar um pedido desde a comanda até a embalagem. Mãos, pão, carne, molho, montagem, fechamento. Tudo rápido e muito próximo, imagem fechada nos detalhes e ambiente bem iluminado, tons quentes evidenciando o produto.</p>
+      <div class="refs">
+        <a href="https://www.instagram.com/p/DXE-Sc3jhue/" target="_blank" rel="noopener">instagram.com/p/DXE-Sc3jhue</a>
+        <a href="https://www.instagram.com/p/DcWDHXIRvF6/" target="_blank" rel="noopener">instagram.com/p/DcWDHXIRvF6</a>
+        <a href="https://www.instagram.com/p/DaQTV2fxN4z/" target="_blank" rel="noopener">instagram.com/p/DaQTV2fxN4z</a>
+        <a href="https://www.instagram.com/p/DZ-Eb3mR1nw/" target="_blank" rel="noopener">instagram.com/p/DZ-Eb3mR1nw</a>
+      </div>
+    </div>
+
+    <div class="ep pink">
+      <div class="ep-head"><span class="idx">02</span><span class="epn">Esse som deveria ser proibido</span></div>
+      <p class="note">opção de título: "Áudio proibido em 59 países"</p>
+      <p class="principal">Conteúdo quase ASMR. Carne chegando na chapa, selagem, queijo, pão tostando, embalagem abrindo. Texto curto acompanhando uma trend de áudio ou frase do momento.</p>
+      <div class="refs">
+        <a href="https://www.instagram.com/reel/Da6FY8sJ1SJ/" target="_blank" rel="noopener">instagram.com/reel/Da6FY8sJ1SJ</a>
+        <a href="https://www.instagram.com/p/DZ-Eb3mR1nw/" target="_blank" rel="noopener">instagram.com/p/DZ-Eb3mR1nw</a>
+        <a href="https://www.instagram.com/reel/DXUbT8LDRul/" target="_blank" rel="noopener">instagram.com/reel/DXUbT8LDRul</a>
+        <a href="https://www.instagram.com/reel/DcJCZF8I9lx/" target="_blank" rel="noopener">instagram.com/reel/DcJCZF8I9lx</a>
+      </div>
+    </div>
+
+    <div class="ep">
+      <div class="ep-head"><span class="idx">03</span><span class="epn">Você pediu. A gente começou daqui.</span></div>
+      <p class="principal">Começa com print ou tela do pedido e corta pra operação acontecendo. Cada take mostra uma etapa. Final com pedido pronto.</p>
+      <p class="note">Ideia: take como se a pessoa estivesse clicando em "fazer pedido", mostrando a tela do que ela pediu, mais takes do preparo e dos bastidores desse pedido sendo feito.</p>
+    </div>
+
+    <div class="ep gold">
+      <div class="ep-head"><span class="idx">04</span><span class="epn">POV: você trabalha cercado disso o dia inteiro</span></div>
+      <p class="principal">Takes muito fechados dos burgers sendo montados. Usar uma frase ou áudio em trend pra brincar com quem precisa trabalhar sentindo aquele cheiro o turno inteiro.</p>
+      <p class="note">Ideia de frase: "o trabalho está me matando"</p>
+      <div class="refs">
+        <a href="https://www.instagram.com/reel/Dde7_5bJbmH/" target="_blank" rel="noopener">instagram.com/reel/Dde7_5bJbmH</a>
+        <a href="https://www.instagram.com/p/DZ7s9FGN81C/" target="_blank" rel="noopener">instagram.com/p/DZ7s9FGN81C</a>
+        <a href="https://www.instagram.com/p/C_vozsUShPA/" target="_blank" rel="noopener">instagram.com/p/C_vozsUShPA</a>
+        <a href="https://www.instagram.com/reel/DdR8krDJBHP/" target="_blank" rel="noopener">instagram.com/reel/DdR8krDJBHP</a>
+      </div>
+    </div>
+
+    <div class="ep">
+      <div class="ep-head"><span class="idx">05</span><span class="epn">O detalhe que quase ninguém vê</span></div>
+      <p class="principal">Close em pequenos cuidados da operação. Quantidade, montagem, selagem, organização, molho, embalagem. Pode ter uma frase curta de alguém da equipe explicando um deles.</p>
+      <div class="refs">
+        <a href="https://www.instagram.com/reels/DcgqDGsA9Ab/" target="_blank" rel="noopener">instagram.com/reels/DcgqDGsA9Ab</a>
+      </div>
+    </div>
+
+    <div class="ep pink">
+      <div class="ep-head"><span class="idx">06</span><span class="epn">Da chapa pra sua casa</span></div>
+      <p class="principal">Transição visual acompanhando o burger. Chapa, bancada, embalagem, sacola, saída. Ritmo mais cinematográfico e poucos textos.</p>
+      <div class="refs">
+        <a href="https://www.instagram.com/p/DXE-Sc3jhue/" target="_blank" rel="noopener">instagram.com/p/DXE-Sc3jhue</a>
+        <a href="https://www.instagram.com/reel/Da6FY8sJ1SJ/" target="_blank" rel="noopener">instagram.com/reel/Da6FY8sJ1SJ</a>
+      </div>
+    </div>
+
+    <div class="ep">
+      <div class="ep-head"><span class="idx">07</span><span class="epn">Quando começa o horário de pico</span></div>
+      <p class="principal">Operação acelerada. Muitas mãos, pedidos, montagem, chapa cheia. Corte rápido, energia e sensação de cozinha funcionando de verdade.</p>
+      <div class="refs">
+        <a href="https://www.instagram.com/p/DXE-Sc3jhue/" target="_blank" rel="noopener">instagram.com/p/DXE-Sc3jhue</a>
+        <a href="https://www.instagram.com/p/DcWDHXIRvF6/" target="_blank" rel="noopener">instagram.com/p/DcWDHXIRvF6</a>
+        <a href="https://www.instagram.com/p/DaQTV2fxN4z/" target="_blank" rel="noopener">instagram.com/p/DaQTV2fxN4z</a>
+        <a href="https://www.instagram.com/p/DZ-Eb3mR1nw/" target="_blank" rel="noopener">instagram.com/p/DZ-Eb3mR1nw</a>
+      </div>
+    </div>
+
+    <div class="ep gold">
+      <div class="ep-head"><span class="idx">08</span><span class="epn">POV: você pediu o McManis</span></div>
+      <p class="principal">Construção completa de um produto específico. Close extremo em cada camada até revelar o burger inteiro no final.</p>
+      <div class="refs">
+        <a href="https://www.instagram.com/reels/DaoHNHapOE6/" target="_blank" rel="noopener">instagram.com/reels/DaoHNHapOE6</a>
+        <a href="https://www.instagram.com/p/DXE-Sc3jhue/" target="_blank" rel="noopener">instagram.com/p/DXE-Sc3jhue</a>
+        <a href="https://www.instagram.com/p/DcWDHXIRvF6/" target="_blank" rel="noopener">instagram.com/p/DcWDHXIRvF6</a>
+        <a href="https://www.instagram.com/p/DaQTV2fxN4z/" target="_blank" rel="noopener">instagram.com/p/DaQTV2fxN4z</a>
+        <a href="https://www.instagram.com/p/DZ-Eb3mR1nw/" target="_blank" rel="noopener">instagram.com/p/DZ-Eb3mR1nw</a>
+      </div>
+    </div>
+
+    <div class="ep">
+      <div class="ep-head"><span class="idx">09</span><span class="epn">Mãos que já fizeram alguns milhares desses</span></div>
+      <p class="principal">Foco total nas mãos de alguém experiente montando o produto quase automaticamente. No final podemos revelar rapidamente quem é.</p>
+      <p class="note">Pensar em gancho/gatilho/frase melhor.</p>
+      <div class="refs">
+        <a href="https://www.instagram.com/reel/DDpy1I0vozB/" target="_blank" rel="noopener">instagram.com/reel/DDpy1I0vozB</a>
+      </div>
+    </div>
+
+    <div class="ep pink">
+      <div class="ep-head"><span class="idx">10</span><span class="epn">Seu Ogro em 20 segundos</span></div>
+      <p class="principal">Montagem extremamente dinâmica de um pedido inteiro. Do pão pra sacola. Conteúdo pensado para retenção e replay.</p>
+      <div class="refs">
+        <a href="https://www.instagram.com/p/DXE-Sc3jhue/" target="_blank" rel="noopener">instagram.com/p/DXE-Sc3jhue</a>
+        <a href="https://www.instagram.com/p/DcWDHXIRvF6/" target="_blank" rel="noopener">instagram.com/p/DcWDHXIRvF6</a>
+        <a href="https://www.instagram.com/p/DaQTV2fxN4z/" target="_blank" rel="noopener">instagram.com/p/DaQTV2fxN4z</a>
+        <a href="https://www.instagram.com/p/DZ-Eb3mR1nw/" target="_blank" rel="noopener">instagram.com/p/DZ-Eb3mR1nw</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="kicker">Aproveitando a operação</div>
+    <h2>Outras ideias <span class="n">curtas</span></h2>
+    <ul class="q">
+      <li>Marketing invadiu a operação da Ogro pra mostrar os mais pedidos da noite</li>
+      <li>Trend do barulho: chapa, pedido saindo, batata fritando</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="kicker">Complemento pro roteiro Jimmy &amp; Igor</div>
+    <h2>Ep 02 <span class="n">·</span> O que ninguém vê antes do pedido chegar</h2>
+    <p class="note">Atualização da referência de takes desse episódio (Igor), agora que vamos ter gravação real na operação.</p>
+
+    <div class="ep">
+      <div class="ep-head"><span class="epn">O que ninguém vê antes do pedido chegar</span><span class="idx">Igor</span></div>
+      <p class="principal">O que ninguém vê antes do pedido chegar?</p>
+      <div class="label">Complementares</div>
+      <ul class="q">
+        <li>Qual cuidado com o pedido o cliente nem imagina que existe?</li>
+        <li>Tem alguma história que já aconteceu e virou aprendizado, e que mudou a forma como vocês fazem hoje?</li>
+      </ul>
+      <div class="label">Gancho, opção fofoca/exposed</div>
+      <ul class="q">
+        <li>"Não era pra eu contar isso, mas...", com o Igor se aproximando da câmera, como quem conta um segredo.</li>
+        <li>Texto na tela "Exposed da cozinha da Ogro". Ele começa a falar e corta pra operação acontecendo (B-roll).</li>
+        <li>"Senta que lá vem fofoca de cozinha." Ele de fato senta, como numa conversa entre amigos.</li>
+      </ul>
+      <div class="label">Gancho, opção quebra de expectativa</div>
+      <div class="quote-box">"Eu tô aqui no escritório, mas a essa hora tem [X pedidos / gente na chapa] acontecendo agora." Corta pra cozinha a todo vapor (B-roll).</div>
+      <div class="label">Referências de takes (atualizado)</div>
+      <p>Agora dá pra ser uma coisa muito no bastidor da operação, com uma abordagem dinâmica e orgânica, com um bom gancho visual/falado do Igor dentro da cozinha, mostrando de verdade algum diferencial que o cliente não vê, mas que faz toda a diferença no cuidado do pedido.</p>
+      <div class="refs">
+        <a href="https://www.instagram.com/p/Dcb98a7J19X/" target="_blank" rel="noopener">instagram.com/p/Dcb98a7J19X</a>
+        <a href="https://www.instagram.com/reels/DaoHNHapOE6/" target="_blank" rel="noopener">instagram.com/reels/DaoHNHapOE6</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>Ogro Steaks × Seven7 · roteiro interno de gravação</p>
+</footer>
+
+</body>
+</html>
